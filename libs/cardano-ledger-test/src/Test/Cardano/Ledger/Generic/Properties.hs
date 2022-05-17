@@ -53,6 +53,7 @@ import Test.Cardano.Ledger.Generic.GenState
     GenState (..),
     modifyModel,
     runGenRS,
+    startSlot,
   )
 import Test.Cardano.Ledger.Generic.MockChain (MOCKCHAIN, MockChainState (..))
 import Test.Cardano.Ledger.Generic.ModelState
