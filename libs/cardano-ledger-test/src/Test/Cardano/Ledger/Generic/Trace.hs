@@ -168,7 +168,8 @@ genMockChainState ::
   Proof era ->
   GenState era ->
   Gen (MockChainState era)
-genMockChainState proof gstate = pure $ MockChainState newepochstate (getSlot gstate) 0
+genMockChainState proof gstate = 
+  pure $ MockChainState newepochstate (getSlot gstate) 0
   where
     ledgerstate = initialLedgerState gstate
     newepochstate =
